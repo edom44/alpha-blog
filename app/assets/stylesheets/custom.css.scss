@@ -1,0 +1,91 @@
+$navbar-default-bg: #08088a;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+#logo{
+    float: left;
+    font-size:1.7em;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:-1px;
+    font-weight:bold;
+}
+#logo:hover{
+    color:red;
+    text-decoration:none;
+}
+.center {
+
+    text-align: center;
+
+
+}
+.jumbotron {
+
+    background-image:asset-url('Business_Blog.jpg');
+    background-size:contain;
+    height:550px;
+    background-position:center;
+}
+
+.jumbotron h1{
+
+    color:#00BFFF;
+    text-align:center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.btn-xlarge {
+
+font-size: 1.7em;
+
+background-color: #00BFFF;
+
+
+}
+
+.btn-xlarge:hover{
+    background-color:#00BFFF;
+}
+
+
+ footer {
+
+ margin-bottom:15px;
+ padding:5px;
+
+    color: #777;
+
+}
+
+footer a:hover {
+
+    color: #222;
+
+}
+
+footer small {
+
+    float: left;
+
+}
+
+footer ul {
+
+    float: right;
+
+    list-style: none;
+
+}
+
+footer ul li {
+
+    float: left;
+
+    margin-left: 15px;
+
+}
