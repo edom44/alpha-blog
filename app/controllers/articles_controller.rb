@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
@@ -26,7 +27,7 @@ class ArticlesController < ApplicationController
 
   # POST /articles
   # POST /articles.json
-   def create
+    def create
 
     @article = Article.new(article_params)
 
@@ -39,9 +40,7 @@ class ArticlesController < ApplicationController
       else
 
       render 'new'
-
       end
-
     end
 
   # PATCH/PUT /articles/1
@@ -50,7 +49,7 @@ class ArticlesController < ApplicationController
 
       @article = Article.find(params[:id])
 
-   if @article.update(article_params)
+    if @article.update(article_params)
 
     flash[:success] = "Article was successfully updated"
 
@@ -59,10 +58,8 @@ class ArticlesController < ApplicationController
     else
 
     render 'edit'
-
-end
-
-end
+    end
+  end
 
   # DELETE /articles/1
   # DELETE /articles/1.json
