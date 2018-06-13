@@ -31,6 +31,7 @@ class ArticlesController < ApplicationController
 
     @article = Article.new(article_params)
 
+
       if @article.save
 
         flash[:success] = "Article was successfully created"
